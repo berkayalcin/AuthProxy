@@ -2,8 +2,6 @@
 Microsoft Visual Studio Solution File, Format Version 12.00
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthProxy", "AuthProxy\AuthProxy.csproj", "{06CA9C5F-A916-4FF9-B5DA-E0F3BBA1E5DF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AuthProxyExample", "AuthProxyExample\AuthProxyExample.csproj", "{83FF983B-ECAE-4E29-A779-EC611027D5B5}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,9 +12,5 @@ Global
 		{06CA9C5F-A916-4FF9-B5DA-E0F3BBA1E5DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{06CA9C5F-A916-4FF9-B5DA-E0F3BBA1E5DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{06CA9C5F-A916-4FF9-B5DA-E0F3BBA1E5DF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{83FF983B-ECAE-4E29-A779-EC611027D5B5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{83FF983B-ECAE-4E29-A779-EC611027D5B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{83FF983B-ECAE-4E29-A779-EC611027D5B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{83FF983B-ECAE-4E29-A779-EC611027D5B5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

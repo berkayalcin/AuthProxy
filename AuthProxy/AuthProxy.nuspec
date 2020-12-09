@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package>
+    <metadata>
+        <id>AuthProxy</id>
+        <version>1.0.0</version>
+        <title>AuthProxy</title>
+        <authors>Berkay YALCIN</authors>
+        <owners>Berkay YALCIN</owners>
+        <requireLicenseAcceptance>true</requireLicenseAcceptance>
+        <license type="expression">MIT</license>
+        <projectUrl>https://github.com/berkayalcin/AuthProxy</projectUrl>
+        <description>Object-Based Authorization Library</description>
+        <releaseNotes>Added Class-Based,Method-Based authorization.</releaseNotes>
+        <copyright>Copyright 2020</copyright>
+        <tags>AOP,Authorization</tags>
+    </metadata>
+</package>
