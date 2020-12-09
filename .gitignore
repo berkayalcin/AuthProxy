@@ -4,3 +4,14 @@ obj/
 riderModule.iml
 /_ReSharper.Caches/
 **/AuthProxyExample/**
+/AuthProxyExample/AuthProxyExample.csproj
+/AuthProxyExample/Properties/
+/AuthProxyExample/Controllers/
+/AuthProxyExample/Models/
+/AuthProxyExample/Services/
+/AuthProxyExample/Views/
+/AuthProxyExample/wwwroot/
+/AuthProxyExample/appsettings.json
+/AuthProxyExample/appsettings.Development.json
+/AuthProxyExample/Program.cs
+/AuthProxyExample/Startup.cs
