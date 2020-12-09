@@ -4,6 +4,8 @@ on:
   workflow_run:
     workflows: ["AuthProxy CI"]
     branches: [ master ]
+    types:
+      - completed
 
 jobs:
   publish-nuget:
