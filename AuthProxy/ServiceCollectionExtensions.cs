@@ -9,6 +9,36 @@ namespace AuthProxy
 {
     public static class ServiceCollectionExtensions
     {
+        public static IServiceCollection RegisterServices(this IServiceCollection serviceCollection,
+            string serviceNamePostfix)
+        {
+            serviceCollection.AddScoped<IInterceptor, UnitOfWorkInterceptor>();
+            var assembly = Assembly.GetCallingAssembly();
+            var interfaces = assembly.GetTypes()
+                .Where(t => t.IsInterface && !string.IsNullOrEmpty(t.FullName) &&
+                            t.FullName.EndsWith(serviceNamePostfix));
+            foreach (var @interface in interfaces)
+            {
+                if (string.IsNullOrEmpty(@interface.FullName))
+                    continue;
+
+                var derivedClassName = @interface.Name.Substring(1);
+
+                var serviceName = string.Join(".", @interface.FullName.Split(".").SkipLast(1)) + $".{derivedClassName}";
+
+
+                var derivedClass =
+                    assembly.GetType(serviceName);
+                if (derivedClass == null)
+                    continue;
+
+                serviceCollection.AddScoped(derivedClass);
+                serviceCollection.AddProxiedScoped(@interface, derivedClass);
+            }
+
+            return serviceCollection;
+        }
+
         public static void AddObjectBasedAuthorization(this IServiceCollection services)
         {
             services.AddSingleton(new ProxyGenerator());
