@@ -1,5 +1,7 @@
 # AuthProxy
 
+![Nuget](https://img.shields.io/nuget/v/AuthProxy?style=flat-square) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/berkayalcin/AuthProxy/AuthProxy?label=Nuget%20CI) ![GitHub Workflow Status](https://img.shields.io/github/workflow/status/berkayalcin/AuthProxy/AuthProxy%20CI) ![Nuget](https://img.shields.io/nuget/dt/AuthProxy)
+
 Unlike Controller Actions, AuthProxy is a library developed to provide authorization on objects.
 With AuthProxy, you can add user authorization to the object itself or its methods.
 
